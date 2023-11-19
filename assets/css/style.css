@@ -1,0 +1,126 @@
+/* 0. Definiciones generales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. Definición de Layout (Grid) */
+.image-border-main {
+    grid-area: section-n1;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0 16px 0;
+}
+
+.stickers-main {
+    grid-area: section-n2;
+    background-color: rgb(192, 239, 246);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Flex', sans-serif;
+    padding: 32px 0 32px 0;
+}
+
+.password-main {
+    grid-area: section-n3;
+    background-color: rgb(43, 109, 251);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Flex', sans-serif;
+    padding: 20px 0 20px 0;
+}
+
+/*2. Definición de la grilla*/
+.grid-layout {
+    display: grid;
+    grid-template-areas:
+        "section-n1"
+        "section-n2"
+        "section-n3";
+    gap: 2em;
+    min-height: 100vh;
+}
+
+/* 3. Sección N°1: Modificación de borde de imagen */
+#image-sec-1 {
+    height: 400px;
+}
+
+.image-click {
+    height: 400px;
+    border: 2px solid rgb(219, 20, 60);
+}
+
+.image-border-main-2 {
+    padding: 14px 0 14px 0;
+}
+
+/* 4. Sección N°2: Stickers */
+.stickers-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.select-sticker {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5em 0 2.5em;
+}
+
+.select-sticker img {
+    padding-bottom: 1em;
+}
+
+.stickers-main p {
+    margin: 0;
+    padding: 1.5em 0 1em 0;
+}
+
+.stickers-main button {
+    font-size: medium;
+}
+
+.stickers-main input {
+    height: 1.5em;
+}
+
+/* 5. Sección N°3: Password */
+.digits {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1em;
+}
+
+.digit-box {
+    padding: 0.5em;
+}
+
+.digits select {
+    width: 5em;
+}
+
+.password-main p {
+    font-weight:500;
+    font-size: large;
+    color: antiquewhite;
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+.password-main button {
+    font-size: medium;
+}
+
+.password-main p {
+    margin: 0;
+    padding: 1.5em 0 1em 0;
+}
